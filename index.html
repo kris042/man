@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Hitman</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .man h1, .man h3 {
+            color: white;
+            text-align: center;
+        }
+
+        .wrapper {
+            width: 90%;
+            max-width: 1000px;
+            background-color: rgb(42, 40, 40);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(211, 123, 123, 0.873);
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .order-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            box-shadow: 0 0 15px rgba(211, 123, 123, 0.873);
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: red;
+        }
+
+        .item, .headers {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr auto;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .headers {
+            color: white;
+            font-size: 1.3em;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        .item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .item h2, .item h3, .item h4 {
+            margin: 0;
+            color: white;
+        }
+
+        .item h4 {
+            color: rgba(26, 247, 49, 0.941);
+        }
+
+        .div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .div span {
+            color: yellow;
+            font-size: 2em;
+        }
+
+        .div .red-text {
+            color: red;
+            font-size: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .item h2, .item h3, .item h4 {
+                font-size: 1em;
+            }
+
+            .item h4 {
+                font-size: 0.9em;
+            }
+
+            .order-btn {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+
+            .wrapper {
+                width: 100%;
+                margin: 0;
+            }
+
+            .div span, .div .red-text {
+                font-size: 1.5em;
+            }
+
+            .man h1, .man h3 {
+                font-size: 1.3em;
+            }
+
+            .headers h3 {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .div span, .div .red-text {
+                font-size: 1.2em;
+            }
+
+            .man h1, .man h3 {
+                font-size: 1.1em;
+            }
+
+            .item {
+                padding: 8px 0;
+            }
+
+            .item h2, .item h3, .item h4 {
+                font-size: 0.8em;
+            }
+
+            .order-btn {
+                padding: 6px 12px;
+                font-size: 0.9em;
+            }
+
+            .headers h3 {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<div class="div">
+    <span>Rent a</span>
+    <span class="red-text">Hit-Man</span>
+</div>
+<body>
+    <div class="man">
+        <h1>Welcome to the Dark-Web Rent a Hit-Man</h1>
+        <h3>10 Available Victims</h3>
+    </div>
+
+    <div class="wrapper">
+        <!-- Header row -->
+        <div class="headers">
+            <h3>S/N</h3>
+            <h3>Target Name</h3>
+            <h3>Amount</h3>
+            <div></div> <!-- Empty for button -->
+        </div>
+
+        <!-- Item rows -->
+        <div class="item">
+            <h2>1</h2>
+            <h3>Kris Russell</h3>
+            <h4>$15,090.00</h4>
+            <button type="button" onclick="location.href='index2.html'" class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>2</h2>
+            <h3>Anthony McDonald</h3>
+            <h4>$20,800.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>3</h2>
+            <h3>James Bonup</h3>
+            <h4>$10,600.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>4</h2>
+            <h3>Chang Wong</h3>
+            <h4>$12,400.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>5</h2>
+            <h3>Kim Anderson</h3>
+            <h4>$14,840.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>6</h2>
+            <h3>Bunope Winkly</h3>
+            <h4>$10,900.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>7</h2>
+            <h3>Adam Bruce</h3>
+            <h4>$25,090.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>8</h2>
+            <h3>Williams Crock</h3>
+            <h4>$13,600.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>9</h2>
+            <h3>Angelina</h3>
+            <h4>$17,200.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+        <div class="item">
+            <h2>10</h2>
+            <h3>Macurs</h3>
+            <h4>$15,800.00</h4>
+            <button class="order-btn">Profile</button>
+        </div>
+    </div>
+</body>
+</html>
